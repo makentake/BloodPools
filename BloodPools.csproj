@@ -3,12 +3,30 @@
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>BloodPools</AssemblyName>
-    <Description>My first plugin</Description>
+    <Description>Makes dead bodies bleed all over the floor instead of just sitting there.</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
+    <ItemGroup>
+		<Reference Include = "BepInEx">
+			<HintPath> lib\BepInEx.dll </HintPath>
+		</Reference>
+		<Reference Include = "UnityEngine">
+			<HintPath> lib\UnityEngine.dll </HintPath>
+		</Reference>
+		<Reference Include = "UnityEngine.CoreModule">
+			<HintPath> lib\UnityEngine.CoreModule.dll </HintPath>
+		</Reference>
+		<Reference Include = "Assembly-CSharp">
+			<HintPath> lib\Assembly-CSharp.dll </HintPath>
+		</Reference>
+		<Reference Include = "Aki.Reflection">
+			<HintPath> lib\Aki.Reflection.dll </HintPath>
+		</Reference>
+	</ItemGroup>
+	
   <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.*" />
