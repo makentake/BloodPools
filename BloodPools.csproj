@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
@@ -19,6 +19,9 @@
 		<Reference Include = "UnityEngine.CoreModule">
 			<HintPath> lib\UnityEngine.CoreModule.dll </HintPath>
 		</Reference>
+		<Reference Include = "UnityEngine.PhysicsModule">
+			<HintPath> lib\UnityEngine.PhysicsModule.dll </HintPath>
+		</Reference>
 		<Reference Include = "Assembly-CSharp">
 			<HintPath> lib\Assembly-CSharp.dll </HintPath>
 		</Reference>
@@ -26,13 +29,6 @@
 			<HintPath> lib\Aki.Reflection.dll </HintPath>
 		</Reference>
 	</ItemGroup>
-	
-  <ItemGroup>
-    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
-    <PackageReference Include="BepInEx.Core" Version="5.*" />
-    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
-    <PackageReference Include="UnityEngine.Modules" Version="2019.4.39f1" IncludeAssets="compile" />
-  </ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
