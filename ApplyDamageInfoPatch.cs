@@ -19,10 +19,12 @@ namespace BloodPools
                 Plugin.log.LogMessage("bot died?");
                 //Plugin.log.LogMessage($"toBleed = {Plugin.toBleed.Value}, bloodRadiusInterval = {Plugin.bloodRadiusInterval.Value}, bleedInterval = {Plugin.bleedInterval.Value}");
 
-                var bleedingBody = __instance.gameObject.AddComponent<BleedingBody>();
-                bleedingBody.toBleed = Plugin.toBleed.Value;
+                //var bleedingBody = __instance.gameObject.AddComponent<BleedingBody>();
+                /*bleedingBody.toBleed = Plugin.toBleed.Value;
                 bleedingBody.bloodRadiusInterval = Plugin.bloodRadiusInterval.Value;
-                bleedingBody.bleedInterval = Plugin.bleedInterval.Value;
+                bleedingBody.bleedInterval = Plugin.bleedInterval.Value;*/
+
+                __instance.gameObject.AddComponent<BleedingBody>();
             }
         }
     }
